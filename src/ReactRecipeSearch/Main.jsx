@@ -26,6 +26,7 @@ export default function Main() {
 	const [disabled, setDisabled] = useState(false)
 	const [isLoaded, setIsLoaded] = useState(true)
 	const [error, setError] = useState("")
+	const pseudo = 0
 
 	function handleDietChange(diet){
 		setDiet([...diet])
@@ -88,6 +89,13 @@ if(error){
 	return(
 		<div>{!recipeResults ? 
 			(<Container className="pt-5">
+				{pseudo ? (
+					meal,
+					diet,
+					health,
+					cuisine,
+					dish
+				): ""}
 				<Jumbotron>
 					<h1 style={{textAlign: "center"}}>Recipe Search</h1>
 					<div className="mt-5">
